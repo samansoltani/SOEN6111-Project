@@ -32,51 +32,51 @@ The dataset comprises of:
 
 1.	calendar.csv - Contains information about the dates on which the products are sold. [1]
 
-•	date: The date in a “y-m-d” format.
+    •	date: The date in a “y-m-d” format.
 
-•	wm_yr_wk: The id of the week the date belongs to.
+    •	wm_yr_wk: The id of the week the date belongs to.
 
-•	weekday: The type of the day (Saturday, Sunday, …, Friday).
+    •	weekday: The type of the day (Saturday, Sunday, …, Friday).
 
-•	wday: The id of the weekday, starting from Saturday.
+    •	wday: The id of the weekday, starting from Saturday.
 
-•	month: The month of the date.
+    •	month: The month of the date.
 
-•	year: The year of the date.
+    •	year: The year of the date.
 
-•	event_name_1: If the date includes an event, the name of this event.
+    •	event_name_1: If the date includes an event, the name of this event.
 
-•	event_type_1: If the date includes an event, the type of this event.
+    •	event_type_1: If the date includes an event, the type of this event.
 
-•	event_name_2: If the date includes a second event, the name of this event.
+    •	event_name_2: If the date includes a second event, the name of this event.
 
-•	event_type_2: If the date includes a second event, the type of this event.
+    •	event_type_2: If the date includes a second event, the type of this event.
 
-•	snap_CA, snap_TX, and snap_WI: A binary variable (0 or 1) indicating whether the stores of CA, TX or WI allow SNAP purchases on the examined date. 1 indicates that SNAP purchases are allowed.
+    •	snap_CA, snap_TX, and snap_WI: A binary variable (0 or 1) indicating whether the stores of CA, TX or WI allow SNAP purchases on the examined date. 1 indicates that SNAP       purchases are allowed.
 
 2.	sales_train_validation.csv - Contains the historical daily unit sales data per product and store [1]
 
-•	item_id: The id of the product.
+    •	item_id: The id of the product.
 
-•	dept_id: The id of the department the product belongs to.
+    •	dept_id: The id of the department the product belongs to.
 
-•	cat_id: The id of the category the product belongs to.
+    •	cat_id: The id of the category the product belongs to.
 
-•	store_id: The id of the store where the product is sold.
+    •	store_id: The id of the store where the product is sold.
 
-•	state_id: The State where the store is located.
+    •	state_id: The State where the store is located.
 
-•	d_1, d_2, …, d_i, … d_1941: The number of units sold at day i, starting from 2011-01-29.
+    •	d_1, d_2, …, d_i, … d_1941: The number of units sold at day i, starting from 2011-01-29.
 
 3.	sell_prices.csv - Contains information about the price of the products sold per store and date. [1]
 
-•	store_id: The id of the store where the product is sold. 
+    •	store_id: The id of the store where the product is sold. 
 
-•	item_id: The id of the product.
+    •	item_id: The id of the product.
 
-•	wm_yr_wk: The id of the week.
+    •	wm_yr_wk: The id of the week.
 
-•	sell_price: The price of the product for the given week/store. The price is provided per week (average across seven days). If not available, this means that the product was not sold during the examined week. Note that although prices are constant at weekly basis, they may change through time (both training and test set).
+    •	sell_price: The price of the product for the given week/store. The price is provided per week (average across seven days). If not available, this means that the product       was not sold during the examined week. Note that although prices are constant at weekly basis, they may change through time (both training and test set).
 
 4.	sales_train_evaluation.csv - Includes sales. [1]
 
