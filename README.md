@@ -108,7 +108,7 @@ We did the feature engineering in PySpark and took our final dataset to the vani
 
 In conclusion, LightGBM gave the best performance.
 
-![RMSE Comparison](https://github.com/samansoltani/SOEN6111-Project/blob/6017562065398b5769505f8b9379a48846722a82/Images/RMSE%20Comparison.jpeg)
+<img src="https://github.com/samansoltani/SOEN6111-Project/blob/6017562065398b5769505f8b9379a48846722a82/Images/RMSE%20Comparison.jpeg" align="center" height="50" width="50">
 
 ## Conclusion and Future Work:
 We were able to develop a prediction system to generate unit sales predictions for the next 28 days with satisfactory performance. In the process, we experimented with various features and machine learning algorithms in an attempt to improve the performance of the model. As we developed the project on personal computers, we faced several challenges with lack of memory being the most significant one. Dask did exceptionally well in summarizing the data for exploratory data analysis, however, it was not suited for data processing on our infrastructure. At the same time, while PySpark did exceptionally well for data processing and feature engineering, its machine learning library was very restrictive, especially for time series analysis. Also, an exhaustive hyperparameter search with PySpark on our infrastructure was close to impossible. As we moved from PySpark to scikit-learn and LightGBM, our lives were instantly made easier with their machine learning capabilities. In the future, we can further improve the performance of our model by experimenting with feature engineering in PySpark and machine learning algorithms in scikit-learn.
