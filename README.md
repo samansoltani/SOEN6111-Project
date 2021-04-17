@@ -11,5 +11,5 @@ In this project, we will analyze the unit sales of products across the Walmart s
 Predicting unit sales can be as challenging as forecasting weather. For instance, a wrong prediction for the weather may result in us wearing a warm jacket or carrying around an umbrella on a sunny day. Similarly, an inaccurate prediction in a business scenario may result in financial losses or loss of opportunities. So, we will do an exploratory data analysis of the dataset incorporating various perspectives. We will further implement various machine learning algorithms and compare their results to determine the method that provides the most accurate predictions, also stating the uncertainties associated with it.
 ### Related Work:
 1. The M5 Accuracy competition: Results, findings and conclusions: https://www.researchgate.net/publication/344487258_The_M5_Accuracy_competition_Results_findings_and_conclusions
-2. Time Series Forecasting-EDA, FE & Modelling: https://www.kaggle.com/anshuls235/time-series-forecasting-eda-fe-modelling
+2. Time Series Forecasting-EDA, FE & Modelling: https://www.kaggle.com/anshuls235/time-series-forecasting-eda-fe-modelling  
 Contrary to most of the previous work, we will attempt to produce a more scalable solution to this problem with the application of Dask and PySpark.
