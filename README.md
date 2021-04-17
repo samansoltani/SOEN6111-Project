@@ -1,4 +1,4 @@
-**We have added a comprehensive report as 'Report.pdf' in the repository.**
+<body align="justify">
 
 ## Abstract:
 Today, forecasting and predicting is one of the hottest trends in the industry. One of the industries that produce a huge amount of data every day is retailing. This data could be exploited to gain strategic insights for setting up appropriate inventory, achieving benchmark service levels, and so on. It is a challenge to handle and analyze this magnificent amount of data produced by the market giants. These companies invest a lot of their money and time to improve their forecasting solutions for achieving accurate predictions and estimating the levels of uncertainty in these predictions to avoid costly mistakes and maximize their revenue. So, we decided to work on this hot trend by choosing one of the biggest companies in the world, Walmart, where 95% of US shoppers spent their money.
@@ -119,3 +119,7 @@ We were able to develop a prediction system to generate unit sales predictions f
 1. https://mofc.unic.ac.cy/m5-competition
 2. https://www.researchgate.net/publication/344487258_The_M5_Accuracy_competition_Results_findings_and_conclusions
 2. https://www.kaggle.com/anshuls235/time-series-forecasting-eda-fe-modelling
+
+**We have added a comprehensive report as 'Report.pdf' in the repository.**
+
+</body>
