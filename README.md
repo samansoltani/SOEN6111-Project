@@ -45,21 +45,12 @@ This phase is comprised of the following follows:
 
 #### Feature engineering Phase:
 We need to reframe the time series dataset as a supervised machine learning dataset to apply regression algorithms. For that, we need to define input features that will have a strong relationship with our output variable. Therefore, this is one of the most crucial steps in the process. We introduced the following types of features to our dataset:
-
 1. Lag features: Lag features are the classical time series features. We have introduced lags of 28, 35, 42, 49, 56, 63, and 70 days. Since we aim at making forecasts for the next 28 days, we need to have a minimum lag of 28 days, to ensure that we will not have null values in the features of the final 28 days we make the forecast for.
 2. Rolling mean features: We have introduced rolling mean features using window sizes of 7, 15, and 30 days, lagged by 28 days.
 3. Expanding mean features: We have an expanding mean feature with a lag of 28 days.
 4. Categorical features: We have encoded the categorical features using PySpark's StringIndexer, encoding the labels by the descending order of their frequency in the dataset.
 5. Mean features: We have used item mean, department mean, category mean, and store mean.
-
 We also need to transform these features into vectors so that we can pass them to PySpark's ML library. We used PySpark's VectorAssembler to achieve that. 
 
 #### Regression Phase:
 We applied three Machine Learning algorithms from the PySpark's ML library, which are, Linear Regression, Random Forest Regression, and Gradient Boosted Tree Regression. For evaluating the results, we used RMSE and NRMSE (normalized with standard deviation) metrics. We obtained the best results from Random Forest Regression. So, we tried to further optimize this model by performing hyperparameter tuning. However, it was inefficient as there is no time series cross-validation functionality in PySpark. Also, PySpark would crash if we tried to perform an exhaustive hyperparameter search.
-
-
-
-
-
-
-
