@@ -36,6 +36,7 @@ It is vital to visualize and understand the data to develop intuition about the 
 
 ### Approach:
 Our approach comprises of three main phases as follow:
+
 ![alt text](https://github.com/samansoltani/SOEN6111-Project/blob/3a5fee7ca10c393c49e0559f622de069e5ac2706/Images/Workflow.jpg)
 
 
