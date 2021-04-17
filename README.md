@@ -72,9 +72,9 @@ We did the feature engineering in PySpark and took our final dataset to the vani
 
 ## Results:
 1. Linear Regression model (PySpark MLLib):
-  1.1 Hyperparameters:
-    1.1.1max_Iter = 15
-    1.1.2reg_Param = 0.3
+    1.1 Hyperparameters:
+        1.1.1max_Iter = 15
+        1.1.2reg_Param = 0.3
 3. Random Forest Regression (PySpark MLLib):
 4. Gradient Boosted Tree (PySpark MLLib):
 5. Light GBM (LightGBM Framework):
