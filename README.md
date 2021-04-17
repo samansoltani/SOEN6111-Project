@@ -71,6 +71,15 @@ Since we are using lags of 7 days, we need to follow a recursive approach to det
 We did the feature engineering in PySpark and took our final dataset to the vanilla python environment. This allowed us to exploit the scikit-learn library's TimeSeriesSplit and RandomizedSearchCV for hyperparameter tuning, and the LightGBM framework for machine learning. With this approach, we were able to obtain a better result.
 
 ## Results:
+1. Dog
+    1. German Shepherd
+    2. Belgian Shepherd
+        1. Malinois
+        2. Groenendael
+        3. Tervuren
+2. Cat
+    1. Siberian
+    2. Siamese
 1. Linear Regression model (PySpark MLLib):
     1.1 Hyperparameters:
         1.1.1max_Iter = 15
