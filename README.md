@@ -112,6 +112,6 @@ In conclusion, LightGBM gave the best performance.
 We were able to develop a prediction system to generate unit sales predictions for the next 28 days with satisfactory performance. In the process, we experimented with various features and machine learning algorithms in an attempt to improve the performance of the model. As we developed the project on personal computers, we faced several challenges with lack of memory being the most significant one. Dask did exceptionally well in summarizing the data for exploratory data analysis, however, it was not suited for data processing on our infrastructure. At the same time, while PySpark did exceptionally well for data processing and feature engineering, its machine learning library was very restrictive, especially for time series analysis. Also, an exhaustive hyperparameter search with PySpark on our infrastructure was close to impossible. As we moved from PySpark to scikit-learn and LightGBM, our lives were instantly made easier with their machine learning capabilities. In the future, we can further improve the performance of our model by experimenting with feature engineering in PySpark and machine learning algorithms in scikit-learn.
  
 ## References:
-[1]. https://mofc.unic.ac.cy/m5-competition/
-[2]. https://www.researchgate.net/publication/344487258_The_M5_Accuracy_competition_Results_findings_and_conclusions
-[3]. https://www.kaggle.com/anshuls235/time-series-forecasting-eda-fe-modelling/
+1. https://mofc.unic.ac.cy/m5-competition/
+2. https://www.researchgate.net/publication/344487258_The_M5_Accuracy_competition_Results_findings_and_conclusions
+2. https://www.kaggle.com/anshuls235/time-series-forecasting-eda-fe-modelling/
