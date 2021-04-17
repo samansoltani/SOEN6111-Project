@@ -109,7 +109,7 @@ We did the feature engineering in PySpark and took our final dataset to the vani
 In conclusion, LightGBM gave the best performance.
 
 <p align="center">
-    <img src="https://github.com/samansoltani/SOEN6111-Project/blob/6017562065398b5769505f8b9379a48846722a82/Images/RMSE%20Comparison.jpeg" width="400">
+    <img src="https://github.com/samansoltani/SOEN6111-Project/blob/6017562065398b5769505f8b9379a48846722a82/Images/RMSE%20Comparison.jpeg" width="450">
 </p>
 
 ## Conclusion and Future Work:
