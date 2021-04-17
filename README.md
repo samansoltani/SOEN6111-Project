@@ -71,15 +71,15 @@ Since we are using lags of 7 days, we need to follow a recursive approach to det
 We did the feature engineering in PySpark and took our final dataset to the vanilla python environment. This allowed us to exploit the scikit-learn library's TimeSeriesSplit and RandomizedSearchCV for hyperparameter tuning, and the LightGBM framework for machine learning. With this approach, we were able to obtain a better result.
 
 ## Results:
-1. Linear Regression model (PySpark MLLib): 
- 1.1 Hyperparameters: 
+1. Linear Regression model (PySpark MLLib):
+ 1.1 Hyperparameters:
   1.1.1max_Iter = 15
   1.1.2reg_Param = 0.3
  1.2 Result:
   1.2.1 RMSE : 2.29
   1.2.2 NRMSE : 0.637
 2. Random Forest Regression (PySpark MLLib):
- 2.1 Hyperparameters: 
+ 2.1 Hyperparameters:
   2.1.1 maxDepth = 10
   2.1.2 numTrees = 15
   2.1.3 subsampling Rate = 1
