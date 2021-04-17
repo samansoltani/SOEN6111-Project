@@ -1,10 +1,13 @@
 We have used plotly for the visuals. Since github does not render these plots, was can see a rich view of the notebooks using the following links to nbviewer.
 
 M5 Exploratory Data Analysis Notebook:
-  https://nbviewer.jupyter.org/github/samansoltani/SOEN6111-Project/blob/main/M5%20Exploratory%20Data%20Analysis.ipynb
+  https://nbviewer.jupyter.org/github/samansoltani/SOEN6111-Project/blob/ddb61e700dcfa76332b9a23bf94dc494946c2682/M5%20Exploratory%20Data%20Analysis.ipynb
 
 M5 Feature Engineering and Forecasting Notebook:
-  https://nbviewer.jupyter.org/github/samansoltani/SOEN6111-Project/blob/main/M5%20Feature%20Engineering%20and%20Forecasting.ipynb
+  https://nbviewer.jupyter.org/github/samansoltani/SOEN6111-Project/blob/ddb61e700dcfa76332b9a23bf94dc494946c2682/M5%20Feature%20Engineering%20and%20Forecasting.ipynb
 
+M5 Improved Recursive Model Feature Engineering Notebook:
+  https://nbviewer.jupyter.org/github/samansoltani/SOEN6111-Project/blob/ddb61e700dcfa76332b9a23bf94dc494946c2682/M5%20Improved%20Recursive%20Model%20Feature%20Engineering.ipynb
+  
 M5 Improved Recursive Model Feature Engineering Notebook:
   https://nbviewer.jupyter.org/github/samansoltani/SOEN6111-Project/blob/25f1e06da6092adba43997fed1838593287743f5/M5%20Improved%20Recursive%20Model%20LGBM%20Training.ipynb
