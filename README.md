@@ -79,15 +79,32 @@ We did the feature engineering in PySpark and took our final dataset to the vani
         * RMSE : 2.29
         * NRMSE : 0.637
 2. Random Forest Regression (PySpark MLLib):
-	  * Hyperparameters:
-		      * maxDepth = 10
-		      * numTrees = 15
-		      * subsampling Rate = 1
-	  * Result:
-	       * RMSE: 2.28
-	       * NRMSE: 0.635 
-5. Gradient Boosted Tree (PySpark MLLib):
-6. Light GBM (LightGBM Framework):
+    * Hyperparameters:
+        * maxDepth = 10
+        * numTrees = 15 
+        * subsampling Rate = 1
+    * Result:
+        * RMSE: 2.28
+        * NRMSE: 0.635 
+3. Gradient Boosted Tree (PySpark MLLib):
+    * Hyperparameters: 
+        * maxDepth = 10
+    * Result:
+        * RMSE: 2.32
+        * NRMSE: 0.646
+4. Light GBM (LightGBM Framework):
+    * Hyperparameters: 
+        * objective = 'tweedie',
+        * tweedie_variance_power = 1.3,
+        * n_estimators = 1000,
+        * num_leaves = 100,
+        * max_depth = 30,
+        * learning_rate = 0.03,
+        * feature_fraction = 0.7,
+        * bagging_fraction = 0.7,
+    * Result:
+        * RMSE: 2.18
+        * NRMSE: 0.6
 
 In conclusion, LightGBM gave the best performance.
 
