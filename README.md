@@ -15,5 +15,20 @@ Predicting unit sales can be as challenging as forecasting weather. For instance
 ### Related Work:
 1. The M5 Accuracy competition: Results, findings and conclusions: https://www.researchgate.net/publication/344487258_The_M5_Accuracy_competition_Results_findings_and_conclusions
 2. Time Series Forecasting-EDA, FE & Modelling: https://www.kaggle.com/anshuls235/time-series-forecasting-eda-fe-modelling
+
 Contrary to most of the previous work, we will attempt to produce a more scalable solution to this problem with the application of Dask and PySpark.
+
+## Material and Methods:
+
+### Technologies:
+In this project, we have primarily used Dask and PySpark, apart from the common python libraries. In the first phase of the project, that is, the exploratory data analysis, we have used Dask for data processing and Plotly for visualization. While in the second phase, that is, feature engineering and forecasting with machine learning, we have used PySpark. Although Dask sufficed for the exploratory data analysis, which mostly involved summarizing the data to generate a small-sized output, we saw an explosion of data size in the feature engineering phase. When we melted the time series data to obtain a long format, merged it with other details, and tried to add features, the data size exploded. While Dask was unable to handle it, PySpark performed satisfactorily. At a later stage, when we tried to further improve the performance of the predictions, we sought refuge in LightGBM.
+
+### Dataset:
+The M5 dataset provides the unit sales of various products sold by Walmart stores in the United States over 1941 days, organized in the form of grouped time series. This dataset consists of 3049 products, classified into 3 categories (hobbies, foods, and households) and 7 product departments. These products are sold across 10 stores in 3 states (California, Texas, and Wisconsin). Besides the historical time series data, this dataset also includes further information like weekly price changes, SNAP days, and special events (such as, Super Bowl, Valentine’s Day, Orthodox Easter, and so on), which will also allow us to analyze how these factors affect sales. The results obtained from the analysis of this dataset will be scalable as the same methods could be applied to gain insights for other products and stores.\
+The three files that we used from the dataset are:
+1. calendar.csv - Contains information about the dates on which the products are sold. [1]
+2. sales_train_evaluation.csv - Contains the historical daily unit sales data per product and store (d_1 - d_1941). [1]
+3. sell_prices.csv - Contains information about the price of the products sold per store and date. The price is provided per week (average across seven days). If not available, this means that the product was not sold during the examined week. Note that although prices are constant on a weekly basis, they may change through time (both training and test set). [1]
+
+
 
