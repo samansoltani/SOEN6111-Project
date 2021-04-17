@@ -31,7 +31,9 @@ The three files that we used from the dataset are:
 2. sales_train_evaluation.csv - Contains the historical daily unit sales data per product and store (d_1 - d_1941). [1]
 3. sell_prices.csv - Contains information about the price of the products sold per store and date. The price is provided per week (average across seven days). If not available, this means that the product was not sold during the examined week. Note that although prices are constant on a weekly basis, they may change through time (both training and test set). [1]
 
-![alt text](https://github.com/samansoltani/SOEN6111-Project/blob/14c29e994ae6298edba7dafa3b039445979e4e59/Images/Dataset%20Hierarchy.jpg)
+### Exploratory Data Analysis:
+It is vital to visualize and understand the data to develop intuition about the significance of various features in the dataset. The dataset that we used had great potential for exploration, and we found a lot of interesting patterns which equipped us with the knowledge required for feature selection and engineering. A major part of the efforts towards this project has been put into exploratory data analysis. Please find our work in [M5 Exploratory Data Analysis.ipynb](https://nbviewer.jupyter.org/github/samansoltani/SOEN6111-Project/blob/ddb61e700dcfa76332b9a23bf94dc494946c2682/M5%20Exploratory%20Data%20Analysis.ipynb)
+
 
 
 
