@@ -50,7 +50,22 @@ We need to reframe the time series dataset as a supervised machine learning data
 3. Expanding mean features: We have an expanding mean feature with a lag of 28 days.
 4. Categorical features: We have encoded the categorical features using PySpark's StringIndexer, encoding the labels by the descending order of their frequency in the dataset.
 5. Mean features: We have used item mean, department mean, category mean, and store mean.
+
 We also need to transform these features into vectors so that we can pass them to PySpark's ML library. We used PySpark's VectorAssembler to achieve that. 
 
 #### Regression Phase:
 We applied three Machine Learning algorithms from the PySpark's ML library, which are, Linear Regression, Random Forest Regression, and Gradient Boosted Tree Regression. For evaluating the results, we used RMSE and NRMSE (normalized with standard deviation) metrics. We obtained the best results from Random Forest Regression. So, we tried to further optimize this model by performing hyperparameter tuning. However, it was inefficient as there is no time series cross-validation functionality in PySpark. Also, PySpark would crash if we tried to perform an exhaustive hyperparameter search.
+
+### Approach Improvement:
+We realized that PySpark’s ML library is not very efficient for the task at hand, and our results could further be improved. So, we decide to add a few tweaks to our approach, which are:
+
+* Implementing a recursive forecasting model, which would allow us to add lag features with lags lesser than 28 days.
+* The recursive model allowed us to add more lag features with a lesser amount of lag. We introduced:
+  * A classical lag feature of 7 days.
+  * Rolling mean features with window sizes 7 and 365 days, lagged by 7 days
+* Introducing rolling mean features for price in addition to units sold.
+* Applying LGBM Regressor in the vanilla python environment.
+
+Since we are using lags of 7 days, we need to follow a recursive approach to determine forecasts for 28 days. We can calculate the forecasts for the first 7 days at once since we have all lag features populated. Now, for the next 7 days, we need to recalculate the features using the forecasts of the first 7 days before we can make a forecast for them, and so on.
+
+We did the feature engineering in PySpark and took our final dataset to the vanilla python environment. This allowed us to exploit the scikit-learn library's TimeSeriesSplit and RandomizedSearchCV for hyperparameter tuning, and the LightGBM framework for machine learning. With this approach, we were able to obtain a better result.
