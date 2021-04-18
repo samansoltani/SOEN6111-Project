@@ -90,7 +90,7 @@ We realized that PySpark’s ML library is not very efficient for the task at ha
 * Implementing a recursive forecasting model, which would allow us to add lag features with lags lesser than 28 days.
 * Introducing:
   * A classical lag feature of 7 days.
-  * Rolling mean features with window sizes 7 and 365 days, lagged by 7 days
+  * A rolling mean feature with window sizes 7, lagged by 7 days
 * Introducing rolling mean features for price in addition to units sold.
 * Applying LGBM Regressor in the vanilla python environment.
 
