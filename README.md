@@ -44,9 +44,9 @@ The M5 dataset provides the unit sales of 3049 products sold by Walmart stores i
 
 The three files that we used from the dataset are:
 
-1. calendar.csv - Contains information about the dates on which the products are sold. [1]
-2. sales_train_evaluation.csv - Contains the historical daily unit sales data per product and store (d_1 - d_1941). [1]
-3. sell_prices.csv - Contains information about the price of the products sold per store and date. The price is provided per week. [1]
+1. <p align="justify">calendar.csv - Contains information about the dates on which the products are sold. [1]</p>
+2. <p align="justify">sales_train_evaluation.csv - Contains the historical daily unit sales data per product and store (d_1 - d_1941). [1]</p>
+3. <p align="justify">sell_prices.csv - Contains information about the price of the products sold per store and date. The price is provided per week. [1]</p>
 
 ### Exploratory Data Analysis:
 <p align="justify">
