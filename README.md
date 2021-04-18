@@ -155,5 +155,5 @@ We were able to develop a scalable prediction system to generate unit sales pred
 2. https://www.kaggle.com/anshuls235/time-series-forecasting-eda-fe-modelling
 
 ___
-**We have added a comprehensive report as 'Report.pdf' in the repository.**
+We have added a comprehensive report as 'Report.pdf' in the repository.
 ___
