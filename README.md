@@ -21,6 +21,8 @@ Predicting unit sales can be as challenging as forecasting weather. For instance
 ### Related Work:
 <p align="justify">
 1. The M5 Accuracy competition: Results, findings and conclusions: https://www.researchgate.net/publication/344487258_The_M5_Accuracy_competition_Results_findings_and_conclusions
+</p>
+<p align="justify">
 2. Time Series Forecasting-EDA, FE & Modelling: https://www.kaggle.com/anshuls235/time-series-forecasting-eda-fe-modelling
 </p>
 
