@@ -59,17 +59,23 @@ Please find our work here: [M5 Exploratory Data Analysis](https://nbviewer.jupyt
 Our approach comprises of three main phases as follow:
 
 #### Pre-processing phase:
+<p align="justify">
 This phase is comprised of the following follows:
+</p>
+
 1. <p align="justify">Splitting and Melting: We split the sales data by stores, apply melt to convert the data from wide format to long format, and create separate files for each store.</p>
 2. <p align="justify">Merging: We merge the data from all three files so that we have everything in one place.</p>
 3. <p align="justify">Downcasting: We downcast the column types to the smallest possible data type that can store all the values of the column to reduce the amount of memory usage, which proved to be very efficient.</p>
 
 #### Feature engineering Phase:
+<p align="justify">
 In one of the most crucial steps of the process, to reframe the time series data as a regression problem, we introduced various features to the dataset as specified below:
-1. Lag features: We have introduced lags of 28, 35, 42, 49, 56, 63, and 70 days. Since we aim at making forecasts for the next 28 days, we need to have a minimum lag of 28 days, to ensure that we will not have null values in the features of the final 28 days we make the forecast for.
-2. Rolling mean features: We have introduced rolling mean features using window sizes of 7, 15, and 30 days, lagged by 28 days.
-3. Expanding mean features: We have an expanding mean feature with a lag of 28 days.
-4. Mean features: We have used item mean, department mean, category mean, and store mean.
+</p>
+
+1. <p align="justify">Lag features: We have introduced lags of 28, 35, 42, 49, 56, 63, and 70 days. Since we aim at making forecasts for the next 28 days, we need to have a minimum lag of 28 days, to ensure that we will not have null values in the features of the final 28 days we make the forecast for.</p>
+2. <p align="justify">Rolling mean features: We have introduced rolling mean features using window sizes of 7, 15, and 30 days, lagged by 28 days.</p>
+3. <p align="justify">Expanding mean features: We have an expanding mean feature with a lag of 28 days.</p>
+4. <p align="justify">Mean features: We have used item mean, department mean, category mean, and store mean.</p>
 
 #### Regression Phase:
 <p align="justify">
