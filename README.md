@@ -19,12 +19,8 @@ Predicting unit sales can be as challenging as forecasting weather. For instance
 </p>
 
 ### Related Work:
-<p align="justify">
 1. The M5 Accuracy competition: Results, findings and conclusions: https://www.researchgate.net/publication/344487258_The_M5_Accuracy_competition_Results_findings_and_conclusions
-</p>
-<p align="justify">
 2. Time Series Forecasting-EDA, FE & Modelling: https://www.kaggle.com/anshuls235/time-series-forecasting-eda-fe-modelling
-</p>
 
 <p align="justify">
 Contrary to most of the previous work, we will attempt to produce a more scalable solution to this problem with the application of Dask and PySpark.
@@ -33,16 +29,23 @@ Contrary to most of the previous work, we will attempt to produce a more scalabl
 ## Material and Methods:
 
 ### Technologies:
+<p align="justify">
 In this project, we have primarily used Dask and PySpark, apart from the common python libraries. In the first phase of the project, that is, the exploratory data analysis, we have used Dask for data processing and Plotly for visualization. While in the second phase, that is, feature engineering and forecasting with machine learning, we have used PySpark. Although Dask sufficed for the exploratory data analysis, which mostly involved summarizing the data to generate a small-sized output, we saw an explosion of data size in the feature engineering phase. When we melted the time series data to obtain a long format, merged it with other details, and tried to add features, the data size exploded. While Dask was unable to handle it, PySpark performed satisfactorily. At a later stage, when we tried to further improve the performance of the predictions, we sought refuge in LightGBM.
+</p>
 
 ### Dataset:
+<p align="justify">
 The M5 dataset provides the unit sales of 3049 products sold by Walmart stores in the United States over 1941 days, organized in the form of grouped time series. These products are classified into 3 categories and 7 product departments. These products are sold across 10 stores in 3 states of the United States. Besides the historical time series data, this dataset also includes further information like weekly price changes, SNAP days, festivals, and special events, which will also allow us to analyze how these factors affect sales.
+</p>
 
 <p align="center">
     <kbd><img src="https://github.com/samansoltani/SOEN6111-Project/blob/6cf8098eba3d5bdb963881b97252dbce4a4f1099/Images/Dataset%20Hierarchy.jpg" width="650"></kbd>
 </p>
 
+<p align="justify">
 The three files that we used from the dataset are:
+</p>
+
 1. calendar.csv - Contains information about the dates on which the products are sold. [1]
 2. sales_train_evaluation.csv - Contains the historical daily unit sales data per product and store (d_1 - d_1941). [1]
 3. sell_prices.csv - Contains information about the price of the products sold per store and date. The price is provided per week. [1]
