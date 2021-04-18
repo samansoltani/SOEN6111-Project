@@ -49,7 +49,11 @@ The three files that we used from the dataset are:
 3. sell_prices.csv - Contains information about the price of the products sold per store and date. The price is provided per week. [1]
 
 ### Exploratory Data Analysis:
-It is vital to visualize and understand the data to develop intuition about the significance of various features in the dataset. The dataset that we used had great potential for exploration, and we found a lot of interesting patterns which equipped us with the knowledge required for feature selection and engineering. A major part of the efforts towards this project has been put into this exploratory data analysis. Please find our work here: [M5 Exploratory Data Analysis](https://nbviewer.jupyter.org/github/samansoltani/SOEN6111-Project/blob/ddb61e700dcfa76332b9a23bf94dc494946c2682/M5%20Exploratory%20Data%20Analysis.ipynb)
+<p align="justify">
+It is vital to visualize and understand the data to develop intuition about the significance of various features in the dataset. The dataset that we used had great potential for exploration, and we found a lot of interesting patterns which equipped us with the knowledge required for feature selection and engineering. A major part of the efforts towards this project has been put into this exploratory data analysis.
+</p>
+
+Please find our work here: [M5 Exploratory Data Analysis](https://nbviewer.jupyter.org/github/samansoltani/SOEN6111-Project/blob/ddb61e700dcfa76332b9a23bf94dc494946c2682/M5%20Exploratory%20Data%20Analysis.ipynb)
 
 ### Approach:
 Our approach comprises of three main phases as follow:
