@@ -60,7 +60,7 @@ Our approach comprises of three main phases as follow:
 
 #### Pre-processing phase:
 This phase is comprised of the following follows:
-1. Splitting and Melting: We split the sales data by stores, apply melt to convert the data from wide format to long format, and create separate files for each store.
+1. <p align="justify">Splitting and Melting: We split the sales data by stores, apply melt to convert the data from wide format to long format, and create separate files for each store.</p>
 2. Merging: We merge the data from all three files so that we have everything in one place.
 3. Downcasting: We downcast the column types to the smallest possible data type that can store all the values of the column to reduce the amount of memory usage, which proved to be very efficient.
 
