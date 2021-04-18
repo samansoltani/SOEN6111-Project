@@ -25,7 +25,7 @@ In this project, we have primarily used Dask and PySpark, apart from the common 
 The M5 dataset provides the unit sales of 3049 products sold by Walmart stores in the United States over 1941 days, organized in the form of grouped time series. These products are classified into 3 categories and 7 product departments. These products are sold across 10 stores in 3 states of the United States. Besides the historical time series data, this dataset also includes further information like weekly price changes, SNAP days, festivals, and special events, which will also allow us to analyze how these factors affect sales.
 
 <p align="center">
-    <kbd><img src="https://github.com/samansoltani/SOEN6111-Project/blob/0e49ec44bd5c9c86e50bb079b536a1a035659eaf/Images/Dataset%20Hierarchy.jpg" width="450"></kbd>
+    <kbd><img src="https://github.com/samansoltani/SOEN6111-Project/blob/0e49ec44bd5c9c86e50bb079b536a1a035659eaf/Images/Dataset%20Hierarchy.jpg" width="600"></kbd>
 </p>
 
 The three files that we used from the dataset are:
