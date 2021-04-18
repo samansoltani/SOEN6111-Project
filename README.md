@@ -154,6 +154,6 @@ We were able to develop a scalable prediction system to generate unit sales pred
 2. https://www.researchgate.net/publication/344487258_The_M5_Accuracy_competition_Results_findings_and_conclusions
 2. https://www.kaggle.com/anshuls235/time-series-forecasting-eda-fe-modelling
 
-___
+__
 **We have added a comprehensive report as 'Report.pdf' in the repository.**
-___
+__
