@@ -53,13 +53,13 @@ In one of the most crucial steps of the process, to reframe the time series data
 4. Mean features: We have used item mean, department mean, category mean, and store mean.
 
 #### Regression Phase:
-We applied three Machine Learning algorithms from the PySpark's ML library, which are, Linear Regression, Random Forest Regression, and Gradient Boosted Tree Regression. For evaluating the results, we used RMSE and NRMSE (normalized with standard deviation) metrics. We obtained the best results from Random Forest Regression. So, we tried to further optimize this model by performing hyperparameter tuning. However, it was inefficient as there is no time series cross-validation functionality in PySpark. Also, PySpark would crash if we tried to perform an exhaustive hyperparameter search.
+We applied three Machine Learning algorithms from the PySpark's ML library, which are, Linear Regression, Random Forest Regression, and Gradient Boosted Tree Regression. For evaluating the results, we used RMSE and NRMSE (normalized with standard deviation) metrics. We trained the models for one store and obtained the best results from Random Forest Regression. So, we tried to further optimize this model by performing hyperparameter tuning. However, it was inefficient and PySpark would crash if we tried to perform an exhaustive hyperparameter search. Also, there is no time series cross-validation functionality in PySpark.
 
 ### Approach Improvement:
 We realized that PySpark’s ML library is not very efficient for the task at hand, and our results could further be improved. So, we decide to add a few tweaks to our approach, which are:
 
 * Implementing a recursive forecasting model, which would allow us to add lag features with lags lesser than 28 days.
-* The recursive model allowed us to add more lag features with a lesser amount of lag. We introduced:
+* Introducing:
   * A classical lag feature of 7 days.
   * Rolling mean features with window sizes 7 and 365 days, lagged by 7 days
 * Introducing rolling mean features for price in addition to units sold.
@@ -70,14 +70,14 @@ Since we are using lags of 7 days, we need to follow a recursive approach to det
 We did the feature engineering in PySpark and took our final dataset to the vanilla python environment. This allowed us to exploit the scikit-learn library's TimeSeriesSplit and RandomizedSearchCV for hyperparameter tuning, and the LightGBM framework for machine learning. With this approach, we were able to obtain a better result.
 
 ## Results:
-1. Linear Regression model (PySpark MLLib):
+1. Linear Regression model (PySpark ML Library):
     * Hyperparameters:
         * max_Iter = 15
         * reg_Param = 0.3
     * Result:
         * RMSE : 2.29
         * NRMSE : 0.637
-2. Random Forest Regression (PySpark MLLib):
+2. Random Forest Regression (PySpark ML Library):
     * Hyperparameters:
         * maxDepth = 10
         * numTrees = 15 
@@ -85,7 +85,7 @@ We did the feature engineering in PySpark and took our final dataset to the vani
     * Result:
         * RMSE: 2.28
         * NRMSE: 0.635 
-3. Gradient Boosted Tree (PySpark MLLib):
+3. Gradient Boosted Tree (PySpark ML Library):
     * Hyperparameters: 
         * maxDepth = 10
     * Result:
