@@ -63,7 +63,7 @@ Our approach comprises of three main phases as follow:
 This phase is comprised of the following follows:
 </p>
 
-1. Splitting and Melting: We split the sales data by stores, apply melt to convert the data from wide format to long format, and create separate files for each store.
+1. <p align="justify">Splitting and Melting: We split the sales data by stores, apply melt to convert the data from wide format to long format, and create separate files for each store.</p>
 2. <p align="justify">Merging: We merge the data from all three files so that we have everything in one place.</p>
 3. <p align="justify">Downcasting: We downcast the column types to the smallest possible data type that can store all the values of the column to reduce the amount of memory usage, which proved to be very efficient.</p>
 
@@ -83,7 +83,9 @@ We applied three Machine Learning algorithms from the PySpark's ML library, whic
 </p>
 
 ### Approach Improvement:
+<p align="justify">
 We realized that PySpark’s ML library is not very efficient for the task at hand, and our results could further be improved. So, we decide to add a few tweaks to our approach, which are:
+</p>
 
 * Implementing a recursive forecasting model, which would allow us to add lag features with lags lesser than 28 days.
 * Introducing:
@@ -92,9 +94,13 @@ We realized that PySpark’s ML library is not very efficient for the task at ha
 * Introducing rolling mean features for price in addition to units sold.
 * Applying LGBM Regressor in the vanilla python environment.
 
+<p align="justify">
 Since we are using lags of 7 days, we need to follow a recursive approach to determine forecasts for 28 days. We can calculate the forecasts for the first 7 days at once since we have all lag features populated. Now, for the next 7 days, we need to recalculate the features using the forecasts of the first 7 days before we can make a forecast for them, and so on.
+</p>
 
+<p align="justify">
 We did the feature engineering in PySpark and took our final dataset to the vanilla python environment. This allowed us to exploit the scikit-learn library's TimeSeriesSplit and RandomizedSearchCV for hyperparameter tuning, and the LightGBM framework for machine learning. With this approach, we were able to obtain a better result.
+</p>
 
 ## Results:
 1. Linear Regression model (PySpark ML Library):
