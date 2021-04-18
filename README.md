@@ -1,5 +1,3 @@
-<body align="justify">
-
 ## Abstract:
 Today, forecasting and predicting is one of the hottest trends in the industry. One of the industries that produce a huge amount of data every day is retailing. This data could be exploited to gain strategic insights for setting up appropriate inventory, achieving benchmark service levels, and so on. It is a challenge to handle and analyze this magnificent amount of data produced by the market giants. These companies invest a lot of their money and time to improve their forecasting solutions for achieving accurate predictions and estimating the levels of uncertainty in these predictions to avoid costly mistakes and maximize their revenue. So, we decided to work on this hot trend by choosing one of the biggest companies in the world, Walmart, where 95% of US shoppers spent their money.
 
@@ -25,6 +23,10 @@ In this project, we have primarily used Dask and PySpark, apart from the common 
 
 ### Dataset:
 The M5 dataset provides the unit sales of 3049 products sold by Walmart stores in the United States over 1941 days, organized in the form of grouped time series. These products are classified into 3 categories and 7 product departments. These products are sold across 10 stores in 3 states of the United States. Besides the historical time series data, this dataset also includes further information like weekly price changes, SNAP days, festivals, and special events, which will also allow us to analyze how these factors affect sales.
+
+<p align="center">
+    <kbd><img src="https://github.com/samansoltani/SOEN6111-Project/blob/0e49ec44bd5c9c86e50bb079b536a1a035659eaf/Images/Dataset%20Hierarchy.jpg" width="450"></kbd>
+</p>
 
 The three files that we used from the dataset are:
 1. calendar.csv - Contains information about the dates on which the products are sold. [1]
@@ -121,5 +123,3 @@ We were able to develop a prediction system to generate unit sales predictions f
 2. https://www.kaggle.com/anshuls235/time-series-forecasting-eda-fe-modelling
 
 **We have added a comprehensive report as 'Report.pdf' in the repository.**
-
-</body>
