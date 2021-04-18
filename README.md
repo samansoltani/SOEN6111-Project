@@ -72,7 +72,9 @@ In one of the most crucial steps of the process, to reframe the time series data
 4. Mean features: We have used item mean, department mean, category mean, and store mean.
 
 #### Regression Phase:
+<p align="justify">
 We applied three Machine Learning algorithms from the PySpark's ML library, which are, Linear Regression, Random Forest Regression, and Gradient Boosted Tree Regression. For evaluating the results, we used RMSE and NRMSE (normalized with standard deviation) metrics. We trained the models for one store and obtained the best results from Random Forest Regression. So, we tried to further optimize this model by performing hyperparameter tuning. However, it was inefficient and PySpark would crash if we tried to perform an exhaustive hyperparameter search. Also, there is no time series cross-validation functionality in PySpark.
+</p>
 
 ### Approach Improvement:
 We realized that PySpark’s ML library is not very efficient for the task at hand, and our results could further be improved. So, we decide to add a few tweaks to our approach, which are:
