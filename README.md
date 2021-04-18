@@ -43,7 +43,7 @@ Our approach comprises of three main phases as follow:
 This phase is comprised of the following follows:
 1. Splitting and Melting: We split the sales data by stores, apply melt to convert the data from wide format to long format, and create separate files for each store.
 2. Merging: We merge the data from all three files so that we have everything in one place.
-3. Downcasting: We downcast the column types to the smallest possible data type that can store all the values of the column to reduce the amount of storage. With this conversion, we saved around 80% of the memory space.
+3. Downcasting: We downcast the column types to the smallest possible data type that can store all the values of the column to reduce the amount of memory usage, which proved to be very efficient.
 
 #### Feature engineering Phase:
 We need to reframe the time series dataset as a supervised machine learning dataset to apply regression algorithms. For that, we need to define input features that will have a strong relationship with our output variable. Therefore, this is one of the most crucial steps in the process. We introduced the following types of features to our dataset:
