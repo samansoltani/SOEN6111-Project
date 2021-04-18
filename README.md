@@ -60,11 +60,9 @@ Our approach comprises of three main phases as follow:
 
 #### Pre-processing phase:
 This phase is comprised of the following follows:
-<p align="justify">
-1. Splitting and Melting: We split the sales data by stores, apply melt to convert the data from wide format to long format, and create separate files for each store.
-</p>
-2. Merging: We merge the data from all three files so that we have everything in one place.
-3. Downcasting: We downcast the column types to the smallest possible data type that can store all the values of the column to reduce the amount of memory usage, which proved to be very efficient.
+1. <p align="justify">Splitting and Melting: We split the sales data by stores, apply melt to convert the data from wide format to long format, and create separate files for each store.</p>
+2. <p align="justify">Merging: We merge the data from all three files so that we have everything in one place.</p>
+3. <p align="justify">Downcasting: We downcast the column types to the smallest possible data type that can store all the values of the column to reduce the amount of memory usage, which proved to be very efficient.</p>
 
 #### Feature engineering Phase:
 In one of the most crucial steps of the process, to reframe the time series data as a regression problem, we introduced various features to the dataset as specified below:
