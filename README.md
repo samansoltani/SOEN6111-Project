@@ -87,7 +87,7 @@ We applied three Machine Learning algorithms from the PySpark's ML library, whic
 We realized that PySpark’s ML library is not very efficient for the task at hand, and our results could further be improved. So, we decide to add a few tweaks to our approach, which are:
 </p>
 
-* <p align="justify">Implementing a recursive forecasting model, which would allow us to add lag features with lags lesser than 28 days.</p>
+* Implementing a recursive forecasting model, which would allow us to add lag features with lags lesser than 28 days.
 * Introducing:
   * Classical lag features of 7, 14, and 21 days.
   * Rolling mean features with window size 7, lagged by 7 and 365 days.
